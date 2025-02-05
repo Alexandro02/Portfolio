@@ -1,0 +1,25 @@
+---
+const links = [
+  { name: "Home", url: "#home" },
+  { name: "About Me", url: "#about" },
+  { name: "Projects", url: "#projects" },
+  { name: "Contact Me", url: "#contact" },
+];
+
+import Logo from ".assets/Logo3(Fosfogreen-Blackbg).svg";
+---
+
+<nav class="max-w-full h-15 bg-ev-dark px-30 flex items-center justify-between">
+  <Logo width={64} height={64} fill="currentColor" />
+  <ul class="flex gap-4 text-ev-light">
+    {
+      links.map((link) => (
+        <li>
+          <a class="decoration-0 text-[18px]" href={link.url}>
+            {link.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

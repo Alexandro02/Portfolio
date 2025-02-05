@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@font-face {
+  font-style: normal;
+  font-family: "Itim";
+  src: url("/fonts/Itim-Regular.woff2") format("woff2");
+}
+
+@theme {
+  --font-itim: "Itim";
+
+  --color-ev-light: #CFE5D5;
+  --color-ev-primary: #529163;
+  --color-ev-dark: #296639;
+  --color-ev-deep: #033310;
+  --color-ev-accent: #89BB96;
+  --color-ev-rich: #0E3C1A;
+}
