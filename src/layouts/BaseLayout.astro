@@ -10,9 +10,9 @@ import Footer from ".components/Footer.astro";
 		<title>Alex Espino ~ Fullstack Web Developer 🚀</title>
 	</head>
 
-	<body>
+	<body class="flex flex-col">
 		<Navbar />
-		<slot name="main-content"/>
-		<Footer />
+		<slot/>
+		<Footer/>
 	</body>
 </html>
