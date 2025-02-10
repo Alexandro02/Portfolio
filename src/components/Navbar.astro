@@ -9,9 +9,11 @@ const links = [
 import Logo from ".assets/Logo3(Fosfogreen-Blackbg).svg";
 ---
 
-<nav class="max-w-full h-15 bg-ev-dark px-30 flex items-center justify-between font-itim">
+<nav
+  class="max-w-full h-15 bg-ev-dark px-30 flex items-center justify-between font-itim sticky top-0 max-md:px-10 max-2xl:px-12"
+>
   <Logo width={64} height={64} fill="currentColor" />
-  <ul class="flex gap-4 text-ev-light">
+  <ul class="flex gap-4 text-ev-light max-md:hidden">
     {
       links.map((link) => (
         <li>

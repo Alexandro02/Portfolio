@@ -1,0 +1,63 @@
+---
+import GithubLogo from ".assets/Github.svg";
+import Live from ".assets/Live.svg";
+
+const projects = [
+  {
+    name: "Rock Paper Scissors | Javascript | Console only",
+    url: "https://github.com/Alexandro02/rock-paper-scissors",
+    live: "https://alexandro02.github.io/rock-paper-scissors/",
+    description:
+      "In this project I managed to create a simple Jasvascript console game. This meant a challenge in the sense of correct function usage, helper functions declaration, managing the logic for the winning, drawing and loosing cases, as well for the score output.",
+  },
+  {
+    name: "Random Background Generator | Javascript, HTML & CSS",
+    url: "https://github.com/Alexandro02/Random-Background-Generator",
+    live: "Not available! WIP",
+    description:
+      "In this project I put my skills more in deep with JavaScript and DOM manipulation. As well I put my logic into better knowing how to manage the generation of a random hexadecimal number.",
+  },
+  {
+    name: "Beauty Landscapes | Mockup | HTML & CSS",
+    url: "https://github.com/Alexandro02/BeautyLandscapesMock-Page",
+    live: "Not available! WIP",
+    description:
+      "Making correct use of the flexbox properties to properly place items where they should be, correct assets managing and html structure were put in practice in this project.",
+  },
+  {
+    name: "Lading Page | The Odin Project",
+    url: "https://github.com/Alexandro02/Landing-Page---TOP",
+    live: "https://alexandro02.github.io/Landing-Page---TOP/",
+    description:
+      "Managed to create a bit more complex lading page. Tho as with the last one responsiveness is still work in progress.",
+  },
+];
+---
+
+<div class="font-normal flex flex-wrap justify-center gap-[2rem] py-[2rem]">
+  {
+    projects.map((project) => (
+      <div>
+        <h1 class="text-[1.4rem]">{project.name}</h1>
+        <p class="pb-[1rem] max-w-2xl">{project.description}</p>
+        <div class="flex items-center flex-row gap-[2rem] ">
+          <a
+            href={project.url}
+            target="_blank"
+            class="bg-ev-primary px-[20px] py-[10px] inline-block rounded-4xl hover:bg-ev-accent hover:text-ev-dark duration-300 ease-out"
+          >
+            <GithubLogo />
+          </a>
+          <a
+            href={project.live}
+            target="_blank"
+            class="bg-ev-primary text-ev px-[20px] py-[10px] rounded-4xl inline-block hover:scale-95 ease-out duration-300"
+          >
+            Live demo:
+            <Live class="inline" />
+          </a>
+        </div>
+      </div>
+    ))
+  }
+</div>
