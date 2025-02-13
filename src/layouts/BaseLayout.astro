@@ -3,7 +3,7 @@ import Navbar from ".components/Navbar.astro";
 import Footer from ".components/Footer.astro";
 ---
 
-<html>
+<html class="scroll-smooth">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,7 +12,7 @@ import Footer from ".components/Footer.astro";
 
 	<body class="flex flex-col">
 		<Navbar />
-		<slot/>
-		<Footer/>
+		<slot / >
+		<Footer />
 	</body>
 </html>

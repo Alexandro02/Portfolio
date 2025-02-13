@@ -1,6 +1,5 @@
 ---
 const links = [
-  { name: "Home", url: "#home" },
   { name: "About Me", url: "#about" },
   { name: "Projects", url: "#projects" },
   { name: "Contact Me", url: "#contact" },
@@ -10,14 +9,15 @@ import Logo from ".assets/Logo3(Fosfogreen-Blackbg).svg";
 ---
 
 <nav
+  id="top"
   class="max-w-full h-15 bg-ev-dark px-30 flex items-center justify-between font-itim sticky top-0 max-md:px-10 max-md:relative"
 >
   <Logo width={64} height={64} fill="currentColor" />
-  <ul class="flex gap-4 text-ev-light max-md:hidden">
+  <ul class="flex gap-4 text-ev-accent max-md:hidden">
     {
       links.map((link) => (
         <li>
-          <a class="decoration-0 text-[18px]" href={link.url}>
+          <a class="decoration-0 text-[18px] hover:text-ev-light ease-in duration-100" href={link.url}>
             {link.name}
           </a>
         </li>
